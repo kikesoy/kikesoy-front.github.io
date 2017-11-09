@@ -39,27 +39,4 @@ $(document).ready(function(){
         $('#placeholder').load('starships.html');
         $('#btn-starships').addClass('active');
     });
-
-    var root = 'https://swapi.co/api/'
-    console.log(root);
-
-    loadNav(root);
-
-    function loadNav(url){
-        $.ajax({
-            url:        url,
-            method:     'GET',
-            success:    function(data){
-                var navList = document.getElementById('main-nav');
-                console.log(data);
-                for(var myNav in data.results){
-                    console.log(data);
-                }
-            },
-            error:      function(e){
-
-            }
-
-        });
-    }
 });

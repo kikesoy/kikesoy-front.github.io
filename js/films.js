@@ -25,7 +25,7 @@ $(document).ready(function(){
                     filmData += '        <div class="row">';
                     filmData += '            <aside class="col-md-4">';
                     filmData += '                <ul class="list-group">';
-                    filmData += '                    <li class="list-group-item list-header"><h4 class="film-episode">Episode '+data.results[film].episode_id+'</h4></li>';
+                    filmData += '                    <li class="list-group-item list-header"><h4>Episode '+data.results[film].episode_id+'</h4></li>';
                     filmData += '                    <li class="list-group-item"><i class="fa fa-bullhorn" aria-hidden="true"></i> '+data.results[film].director+'</li>';
                     filmData += '                    <li class="list-group-item"><i class="fa fa-ticket" aria-hidden="true"></i> '+data.results[film].producer+'</li>';
                     filmData += '                    <li class="list-group-item"><i class="fa fa-calendar" aria-hidden="true"></i>  '+data.results[film].release_date+' Fecha</li>';

@@ -11,6 +11,34 @@
     <script src="https://use.fontawesome.com/a649e445b9.js"></script>
 </head>
 <body>
+    <!--MODAL-->
+    <div class="modal fade" id="swModal" tabindex="-1" role="dialog" aria-labelledby="swModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="swModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-cover"></div>
+                <div class="modal-body">
+                    <h5 class="modal-episode"></h5>
+                    <p class="modal-crawler"></p>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fa fa-bullhorn" aria-hidden="true"></i> <span class="modal-director"></span></li>
+                    <li class="list-group-item"><i class="fa fa-ticket" aria-hidden="true"></i> <span class="modal-producer"></span></li>
+                    <li class="list-group-item"><i class="fa fa-calendar" aria-hidden="true"></i> <span class="modal-release"></span></li>';
+                </ul>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn-all-films">Ver todas las peliculas</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /MODAL -->
     <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
