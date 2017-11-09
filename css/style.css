@@ -1,0 +1,284 @@
+body{
+    background:#000;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-weight:300;
+    font-size:16px;
+    color:#ccc;
+}
+a{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; 
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    line-height: 0.8;
+    text-transform: uppercase;
+    font-weight:700;
+    margin-bottom:0.5rem;
+}
+h1{
+    font-size: 8rem;
+    margin-bottom:0;
+}
+h2{
+    font-size:5rem;
+}
+h3{
+    font-size:3rem;
+}
+h4{
+    font-size:2rem;
+}
+h5{
+    font-size:1.5rem;
+}
+h6{
+    font-size: 1rem;
+}
+p{
+    font-size:1rem;
+}
+small{
+    font-weight:200;
+}
+header{
+    border:none;
+    border-bottom:1px solid #fff;
+    margin-bottom:0.25rem;
+    padding-bottom:0.25rem;
+}
+.header-light{
+    border-bottom:1px solid #fff;
+    color:#fff;
+}
+.header-dark{
+    border-bottom:1px solid #000;
+    color:#000;
+}
+.table{
+    margin-bottom:2rem;
+}
+.table h2,.table h3,.table h4,.table h5,.table h6{
+    margin-bottom: 0;
+}
+.carousel-indicators{
+    top:2rem;
+    bottom: auto;
+}
+.carousel-indicators li{
+    background-color: rgba(106,142,185, .25)
+}
+.carousel-indicators .active{
+    background-color: #6a8eb9;
+}
+.card{
+    margin-bottom:2rem;
+}
+.content{
+    padding-top:4rem;
+    padding-bottom:4rem;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; 
+}
+#nav{
+    box-shadow: 0 0 3rem #000;
+}
+.navbar{
+    padding-top:0;
+    padding-bottom:0;
+}
+.navbar-light{
+    background:#fff;
+}
+.navbar-brand{
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+.navbar-brand img{
+    width:100px;
+    height: auto;
+    padding:0;
+}
+.nav-link{
+    font-size:2rem;
+    text-transform: uppercase;
+    padding:1rem;
+    width:100%;
+}
+.navbar-light .navbar-nav .nav-link{color:#000;}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color:#fff;
+}
+.navbar-light .navbar-nav #btn-home.active>.nav-link, .navbar-light .navbar-nav #btn-home .nav-link.active, .navbar-light .navbar-nav #btn-home .nav-link.show, .navbar-light .navbar-nav #btn-home .show>.nav-link, .navbar-light .navbar-nav #btn-home .nav-link:focus, .navbar-light .navbar-nav #btn-home .nav-link:hover{
+    background: #a9a2a4;
+}
+.navbar-light .navbar-nav #btn-films.active>.nav-link, .navbar-light .navbar-nav #btn-films .nav-link.active, .navbar-light .navbar-nav #btn-films .nav-link.show, .navbar-light .navbar-nav #btn-films .show>.nav-link, .navbar-light .navbar-nav #btn-films .nav-link:focus, .navbar-light .navbar-nav #btn-films .nav-link:hover{
+    background: #6a8eb9;
+}
+.navbar-light .navbar-nav #btn-people.active>.nav-link, .navbar-light .navbar-nav #btn-people .nav-link.active, .navbar-light .navbar-nav #btn-people .nav-link.show, .navbar-light .navbar-nav #btn-people .show>.nav-link, .navbar-light .navbar-nav #btn-people .nav-link:focus, .navbar-light .navbar-nav #btn-people .nav-link:hover{
+    background: #655e63;
+}
+.navbar-light .navbar-nav #btn-planets.active>.nav-link, .navbar-light .navbar-nav #btn-planets .nav-link.active, .navbar-light .navbar-nav #btn-planets .nav-link.show, .navbar-light .navbar-nav #btn-planets .show>.nav-link, .navbar-light .navbar-nav #btn-planets .nav-link:focus, .navbar-light .navbar-nav #btn-planets .nav-link:hover{
+    background: #2bc4ee;
+}
+.navbar-light .navbar-nav #btn-vehicles.active>.nav-link, .navbar-light .navbar-nav #btn-vehicles .nav-link.active, .navbar-light .navbar-nav #btn-vehicles .nav-link.show, .navbar-light .navbar-nav #btn-vehicles .show>.nav-link, .navbar-light .navbar-nav #btn-vehicles .nav-link:focus, .navbar-light .navbar-nav #btn-vehicles .nav-link:hover{
+    background: #70989d;
+}
+.navbar-light .navbar-nav #btn-starships.active>.nav-link, .navbar-light .navbar-nav #btn-starships .nav-link.active, .navbar-light .navbar-nav #btn-starships .nav-link.show, .navbar-light .navbar-nav #btn-starships .show>.nav-link, .navbar-light .navbar-nav #btn-starships .nav-link:focus, .navbar-light .navbar-nav #btn-starships .nav-link:hover{
+    background: #b8441b;
+}
+#home,#films,#people,#planets,#vehicles,#starships{
+    display:none;
+}
+.film-cover,.people-cover,.planets-cover,.vehicles-cover,.starships-cover{
+    padding:10rem 0;
+    background:transparent center center fixed;
+    background-size: cover;
+    text-align:center;
+    text-shadow: 0 .5rem 2rem #000;
+}
+#films article,#people article, #planets article,#vehicles article,#starships article{
+    background: #fff;
+    color:#000;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; 
+    padding-bottom:2rem;
+}
+/* #home{} */
+#home .btn-primary{
+    background-color:rgba(255,255,255,1);
+    color:#363636;
+    border-color:#fff;
+}
+#home .btn-primary:hover{
+    background-color:rgba(255,255,255,.25);
+    color:#fff;
+}
+#home-ep-1{
+    background:#3c0201;
+}
+#home-ep-2{
+    background:#621a01;
+}
+#home-ep-3{
+    background:#363636;
+}
+#home-ep-4{
+    background:#67767d;
+}
+#home-ep-5{
+    background:#343434;
+}
+#home-ep-6{
+    background:#26433e;
+}
+#home-ep-7{
+    background:#5a0000;
+}
+.col-film-info{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.film-synopsis{overflow: hidden}
+/*#films{}*/
+.film-cover{
+    border:none;
+    border-bottom:.5rem solid #6a8eb9;
+}
+#films .list-group{
+    border-top:1rem solid #6a8eb9;
+}
+#films .list-group h4{
+    margin-bottom: 0;
+}
+#films .list-group i{
+    color:#fff;
+    background-color:#6a8eb9;
+    padding: 5px;
+    border-radius:50%; 
+}
+/* #people{} */
+#people .card-img-top{
+    border:none;
+    border-bottom: 1rem solid #655e63;
+}
+.people-cover{
+    background-image: url(../img/people-bg.jpg);
+    border-bottom:.5rem solid #655e63;
+}
+#people .btn-primary{
+    background-color:rgba(101,94,99,1);
+    color:#fff;
+    border-color:#655e63;
+}
+#people .btn-primary:hover{
+    background-color:rgba(101,94,99,.3);
+    color:#655e63;
+}
+/* #planets{} */
+.planets-cover{
+    background-image: url(../img/planets-bg.jpg);
+    border-bottom:.5rem solid #2bc4ee;
+}
+#planets .table{
+    border-top:1rem solid #2bc4ee;
+}
+#planets .btn-primary{
+    background-color:rgba(43,196,238,1);
+    color:#fff;
+    border-color:#2bc4ee;
+}
+#planets .btn-primary:hover{
+    background-color:rgba(43,196,238,.3);
+    color:#2bc4ee;
+}
+/* #vehicles */
+.vehicles-cover{
+    background-image: url(../img/vehicles-bg.jpg);
+    border-bottom:.5rem solid #70989d;
+}
+#vehicles .table{
+    border-top:1rem solid #70989d;
+}
+#vehicles .btn-primary{
+    background-color:rgba(112,152,157,1);
+    color:#fff;
+    border-color:#70989d;
+}
+#vehicles .btn-primary:hover{
+    background-color:rgba(112,152,157,.3);
+    color:#70989d;
+}
+/* #starships{} */
+.starships-cover{
+    background-image: url(../img/starships-bg.jpg);
+    border-bottom:.5rem solid #b8441b;
+}
+#starships .table{
+    border-top:1rem solid #b8441b;
+}
+#starships .btn-primary{
+    background-color:rgba(184,68,27,1);
+    color:#fff;
+    border-color:#b8441b;
+}
+#starships .btn-primary:hover{
+    background-color:rgba(184,68,27,.3);
+    color:#b8441b;
+}
+
+@media (min-width: 992px) {
+    .nav-link {
+        font-size: 1rem;
+      }
+      .col-film-info{
+        padding-top:0;
+        padding-bottom:0;
+    }
+}
