@@ -39,22 +39,19 @@ $(document).ready(function(){
                 }
                 $('#home').html(homeData);
                 $('#home').fadeIn('slow');
-                $('#swModal').on('show.bs.modal', function (evt) {
-                    $(this).find('.modal-title').html($(evt.relatedTarget).data('title'));
-                    $(this).find('.modal-cover').html('<img src="img/film-episode-'+$(evt.relatedTarget).data('cover')+'.jpg" alt="Episodio '+$(evt.relatedTarget).data('cover')+'" class="img-fluid">');
-                    $(this).find('.modal-crawler').html($(evt.relatedTarget).data('crawler'));
-                    $(this).find('.modal-episode').html($(evt.relatedTarget).data('episode'));
-                    $(this).find('.modal-director').html($(evt.relatedTarget).data('director'));
-                    $(this).find('.modal-producer').html($(evt.relatedTarget).data('producer'));
-                    $(this).find('.modal-release').html($(evt.relatedTarget).data('release'));
+                $('#swModal').on('show.bs.modal', function (eModal) {
+                    $(this).find('.modal-title').html($(eModal.relatedTarget).data('title'));
+                    $(this).find('.modal-cover').html('<img src="img/film-episode-'+$(eModal.relatedTarget).data('cover')+'.jpg" alt="Episodio '+$(eModal.relatedTarget).data('cover')+'" class="img-fluid">');
+                    $(this).find('.modal-crawler').html($(eModal.relatedTarget).data('crawler'));
+                    $(this).find('.modal-episode').html($(eModal.relatedTarget).data('episode'));
+                    $(this).find('.modal-director').html($(eModal.relatedTarget).data('director'));
+                    $(this).find('.modal-producer').html($(eModal.relatedTarget).data('producer'));
+                    $(this).find('.modal-release').html($(eModal.relatedTarget).data('release'));
                 });
-                $('.film-synopsis a').on('click',function(e){
-                    e.preventDefault();
-                });
-                $('#btn-all-films').on('click',function(e){
-                    e.preventDefault();
-                    removeActive();
+                
+                $('#btn-all-films').on('mousedown',function(e){
                     $('#placeholder').load('films.html');
+                    $('#main-nav .nav-item').removeClass('active');
                     $('#btn-films').addClass('active');
                 });
             },
