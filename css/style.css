@@ -5,6 +5,21 @@ body{
     font-size:16px;
     color:#ccc;
 }
+.modal-open{
+    color:#000;
+}
+.modal-open .btn-primary{
+    color:#fff;
+    background-color:#000;
+    border-color:#000;
+}
+.modal-open .btn-primary:hover{
+    color:#fff;
+    background-color:#333;
+}
+.modal-header h1,.modal-header h2,.modal-header h3,.modal-header h4,.modal-header h5,.modal-header h6{
+    margin-bottom: 0;
+}
 a{
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -17,9 +32,13 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
     font-weight:700;
     margin-bottom:0.5rem;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 h1{
-    font-size: 8rem;
+    font-size: 5rem;
     margin-bottom:0;
 }
 h2{
@@ -110,9 +129,9 @@ header{
     padding:0;
 }
 .nav-link{
-    font-size:2rem;
+    font-size:1.5rem;
     text-transform: uppercase;
-    padding:1rem;
+    padding:.5rem;
     width:100%;
 }
 .navbar-light .navbar-nav .nav-link{color:#000;}
@@ -141,11 +160,15 @@ header{
     display:none;
 }
 .film-cover,.people-cover,.planets-cover,.vehicles-cover,.starships-cover{
-    padding:10rem 0;
+    padding:6rem 0;
     background:transparent center center fixed;
     background-size: cover;
     text-align:center;
     text-shadow: 0 .5rem 2rem #000;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 #films article,#people article, #planets article,#vehicles article,#starships article{
     background: #fff;
@@ -199,6 +222,7 @@ header{
 }
 #films .list-group{
     border-top:1rem solid #6a8eb9;
+    margin-bottom: 2rem;
 }
 #films .list-group h4{
     margin-bottom: 0;
@@ -280,6 +304,13 @@ header{
 }
 
 @media (min-width: 992px) {
+    h1{
+        font-size: 8rem;
+        margin-bottom:0;
+    }
+    .film-cover,.people-cover,.planets-cover,.vehicles-cover,.starships-cover{
+        padding:10rem 0;
+    }
     .nav-link {
         font-size: 1rem;
       }

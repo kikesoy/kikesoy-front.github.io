@@ -40,16 +40,16 @@ $(document).ready(function(){
                 $('#home').html(homeData);
                 $('#home').fadeIn('slow');
                 $('#swModal').on('show.bs.modal', function (eModal) {
-                    $(this).find('.modal-title').html($(eModal.relatedTarget).data('title'));
+                    $(this).find('.modal-episode').html($(eModal.relatedTarget).data('episode'));
                     $(this).find('.modal-cover').html('<img src="img/film-episode-'+$(eModal.relatedTarget).data('cover')+'.jpg" alt="Episodio '+$(eModal.relatedTarget).data('cover')+'" class="img-fluid">');
                     $(this).find('.modal-crawler').html($(eModal.relatedTarget).data('crawler'));
-                    $(this).find('.modal-episode').html($(eModal.relatedTarget).data('episode'));
+                    $(this).find('.modal-title').html($(eModal.relatedTarget).data('title'));
                     $(this).find('.modal-director').html($(eModal.relatedTarget).data('director'));
                     $(this).find('.modal-producer').html($(eModal.relatedTarget).data('producer'));
                     $(this).find('.modal-release').html($(eModal.relatedTarget).data('release'));
                 });
                 
-                $('#btn-all-films').on('mousedown',function(e){
+                $('#btn-all-films').on('click',function(e){
                     $('#placeholder').load('films.html');
                     $('#main-nav .nav-item').removeClass('active');
                     $('#btn-films').addClass('active');
