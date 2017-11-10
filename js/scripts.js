@@ -4,7 +4,8 @@ $(document).ready(function(){
     function removeActive(){
         $('#main-nav .nav-item').removeClass('active');
     };
-    $('#btn-home a').on('click',function(e){
+    $('#btn-home a' && '.navbar-brand').on('click',function(e){
+        e.preventDefault();
         removeActive();
         $('#placeholder').load('home.html');
         $('#btn-home').addClass('active');
