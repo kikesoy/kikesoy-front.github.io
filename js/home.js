@@ -41,7 +41,7 @@ $(document).ready(function(){
                 $('#home').fadeIn('slow');
                 $('#swModal').on('show.bs.modal', function (eModal) {
                     $(this).find('.modal-episode').html($(eModal.relatedTarget).data('episode'));
-                    $(this).find('.modal-cover').html('<img src="img/film-episode-'+$(eModal.relatedTarget).data('cover')+'.jpg" alt="Episodio '+$(eModal.relatedTarget).data('cover')+'" class="img-fluid">');
+                    $(this).find('.modal-cover').html('<img src="img/film-bg-ep-'+$(eModal.relatedTarget).data('cover')+'.jpg" alt="Episodio '+$(eModal.relatedTarget).data('cover')+'" class="img-fluid">');
                     $(this).find('.modal-crawler').html($(eModal.relatedTarget).data('crawler'));
                     $(this).find('.modal-title').html($(eModal.relatedTarget).data('title'));
                     $(this).find('.modal-director').html($(eModal.relatedTarget).data('director'));
@@ -50,6 +50,7 @@ $(document).ready(function(){
                 });
                 
                 $('#btn-all-films').on('click',function(e){
+                    e.preventDefault();
                     $('#placeholder').load('films.html');
                     $('#main-nav .nav-item').removeClass('active');
                     $('#btn-films').addClass('active');
