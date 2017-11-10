@@ -313,6 +313,7 @@ header{
     }
     .nav-link {
         font-size: 1rem;
+        padding:1rem;
       }
       .col-film-info{
         padding-top:0;
