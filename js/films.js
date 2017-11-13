@@ -1,6 +1,5 @@
 $(document).ready(function(){
     var root = 'https://swapi.co/api/films/'
-    console.log(root);
     
     loadFilms(root);
 
@@ -12,7 +11,6 @@ $(document).ready(function(){
                 var filmList = document.getElementById('film-list');
                 var filmData = '';
                 for(i=0;i < data.results.length;i++){
-                    // console.log(+[i]+1);
                     $('.carousel-indicators').append('<li data-target="#swCarousel" data-slide-to="'+[i]+'" id="film-indicator-'+[i]+'"></li>');
                 };
                 $('#film-indicator-0').addClass('active');
@@ -64,45 +62,9 @@ $(document).ready(function(){
                 filmCharacter += '<li class="col-md-6 col-lg-4">'+data.name+'</li>';
             },
             error: function(e){
-                console.log(e);
+                console.log('Hubo un error cargando los personajes.');
             }
         });
         return filmCharacter;
     }
-
-
 });
-
-
-
-/*$(document).ready(function(){
-    var root = 'https://swapi.co/api/';
-
-    // METODO 1
-    $.ajax({
-        url: root,
-        method: 'GET',
-    }).then(function(data){
-        for(var i=0;i<data.results.length;i++){
-
-        }
-    });
-
-    // METODO 2
-
-    $.ajax({
-        url:    root + 'films/',
-        method: 'GET',
-        success: function(data){
-            var tarjeta = '';
-            for(var i=0;i<data.results.length;i++){
-                tarjeta += ''
-
-            }
-        },
-        error: function(e){
-
-        },
-    });
-});
-*/

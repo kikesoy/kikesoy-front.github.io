@@ -57,7 +57,7 @@ $(document).ready(function(){
                 });
             },
             error:      function(e){
-
+                console.log('Hubo un error cargando la pagina');
             }
         });
     }

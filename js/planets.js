@@ -60,7 +60,7 @@ $(document).ready(function(){
 
             },
             error:      function(e){
-                alert('Ha ocurrido un error cargando los planetas');
+                console.log('Ha ocurrido un error cargando los planetas');
             }
         });
     }

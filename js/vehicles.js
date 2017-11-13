@@ -8,7 +8,7 @@ $(document).ready(function(){
             url:        url,
             method:     'GET',
             success:    function(data){
-                console.log(data.results);
+                //console.log(data.results);
                 var swVehicles = data.results;
                 var vehicleData = '';
                 for(i=0;i<swVehicles.length;i++){
@@ -61,7 +61,7 @@ $(document).ready(function(){
 
             },
             error:      function(e){
-                alert('Ha ocurrido un error cargando los vehiculos');
+                console.log('Ha ocurrido un error cargando los vehiculos');
             }
         });
     }

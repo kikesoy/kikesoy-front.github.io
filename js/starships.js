@@ -8,8 +8,8 @@ $(document).ready(function(){
             url:        url,
             method:     'GET',
             success:    function(data){
-                console.log(data.results);
-                console.log(url);
+                //console.log(data.results);
+                //console.log(url);
                 var swStarships = data.results;
                 var starshipData = '';
                 for(i=0;i<swStarships.length;i++){
@@ -58,7 +58,7 @@ $(document).ready(function(){
 
             },
             error:      function(e){
-                alert('Ha ocurrido un error cargando los cruceros');
+                console.log('Ha ocurrido un error cargando los cruceros');
             }
         });
     }

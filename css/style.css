@@ -68,6 +68,15 @@ header{
     margin-bottom:0.25rem;
     padding-bottom:0.25rem;
 }
+.btn-primary{
+    background-color:rgba(255,255,255,1);
+    border-color:#fff;
+}
+.btn-primary:hover{
+    background-color:rgba(255,255,255,.66);
+    color:#fff;
+    border-color:#fff;
+}
 .header-light{
     border-bottom:1px solid #fff;
     color:#fff;
@@ -177,17 +186,25 @@ header{
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s; 
-    padding-bottom:2rem;
+}
+.footer-page{
+    padding:1rem;
+}
+.footer-page-people{
+    background-color: #655e63;
+}
+.footer-page-planets{
+    background-color: #2bc4ee;
+}
+.footer-page-vehicles{
+    background-color: #70989d;
+}
+.footer-page-starships{
+    background-color: #b8441b;
 }
 /* #home{} */
 #home .btn-primary{
-    background-color:rgba(255,255,255,1);
     color:#363636;
-    border-color:#fff;
-}
-#home .btn-primary:hover{
-    background-color:rgba(255,255,255,.25);
-    color:#fff;
 }
 #home-ep-1{
     background:#3c0201;
@@ -243,12 +260,6 @@ header{
     border-bottom:.5rem solid #655e63;
 }
 #people .btn-primary{
-    background-color:rgba(101,94,99,1);
-    color:#fff;
-    border-color:#655e63;
-}
-#people .btn-primary:hover{
-    background-color:rgba(101,94,99,.3);
     color:#655e63;
 }
 /* #planets{} */
@@ -260,12 +271,6 @@ header{
     border-top:1rem solid #2bc4ee;
 }
 #planets .btn-primary{
-    background-color:rgba(43,196,238,1);
-    color:#fff;
-    border-color:#2bc4ee;
-}
-#planets .btn-primary:hover{
-    background-color:rgba(43,196,238,.3);
     color:#2bc4ee;
 }
 /* #vehicles */
@@ -277,12 +282,6 @@ header{
     border-top:1rem solid #70989d;
 }
 #vehicles .btn-primary{
-    background-color:rgba(112,152,157,1);
-    color:#fff;
-    border-color:#70989d;
-}
-#vehicles .btn-primary:hover{
-    background-color:rgba(112,152,157,.3);
     color:#70989d;
 }
 /* #starships{} */
@@ -294,15 +293,8 @@ header{
     border-top:1rem solid #b8441b;
 }
 #starships .btn-primary{
-    background-color:rgba(184,68,27,1);
-    color:#fff;
-    border-color:#b8441b;
-}
-#starships .btn-primary:hover{
-    background-color:rgba(184,68,27,.3);
     color:#b8441b;
 }
-
 @media (min-width: 992px) {
     h1{
         font-size: 8rem;
