@@ -5,15 +5,15 @@ body{
     font-size:16px;
     color:#ccc;
 }
-.modal-open{
+.modal-content{
     color:#000;
 }
-.modal-open .btn-primary{
+.modal-content .btn-primary{
     color:#fff;
     background-color:#000;
     border-color:#000;
 }
-.modal-open .btn-primary:hover{
+.modal-content .btn-primary:hover{
     color:#fff;
     background-color:#333;
 }
